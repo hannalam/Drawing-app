@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+
+    <script src="js/sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="js/toolbox.js"></script>
+    <script src="js/colourPalette.js"></script>
+    <script src="js/helperFunctions.js"></script>
+
+    <!-- Tools-->
+    <script src="js/freehandTool.js"></script>
+    <script src="js/mirrorDrawTool.js"></script>
+    <script src="js/lineToTool.js"></script>
+    <script src="js/sprayCanTool.js"></script>
+    
+    <!-- Extension Tools -->
+    <script src="js/shapeTool.js"></script>
+    <script src="js/stampTool.js"></script>
+    <script src="js/eraser.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="title box"><img src="assets/paws.png"></div>
+      <div class="title2 box">My Drawing App</div>
+      <div class="header box">
+        <button id="clearButton" class="button">Clear</button>
+        <button id="saveImageButton" class="button">Save Image</button>
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPalette">
+      </div>
+      <div class="box options">
+      </div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	/*overflow-y: scroll;*/
+}
+
+#content {
+	grid-area: content;
+}
+
+.title{
+	grid-area: title;
+}
+
+.title2{
+	text-align: center;
+	grid-area: title2;
+	font-family: Helvetica, sans-serif
+}
+
+.header {
+	grid-area: header;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left:5px;
+	padding-right: 15px;
+}
+
+.sideBarItem img{
+	max-height: 170%;
+	max-Width: 170%;
+}
+
+.sideBarItem:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+	cursor: cell;
+}
+
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 80px 300px  minmax(500px, 1fr);
+		grid-template-rows: 55px minmax(400px, 1fr) 160px;
+		grid-template-areas:
+                "title title2 header"
+				"sidebar content content"
+                "sidebar colourP options";
+		background-color: #fff;
+		color: #444;
+		cursor: crosshair;
+	}
+.box {
+  background-color: plum;
+  color: black;
+  font-size: 150%;
+}
+
+.title {
+	background-color:rgb(173, 57, 173);
+}
+
+.title img{
+	height: 80%;
+	width: auto;
+	margin-left: 10px;
+	cursor:grab;
+}
+  
+.title2 {
+	background-color: rgb(173, 57, 173);
+}
+
+.header {
+  background-color: rgb(173, 57, 173);
+}
+
+.button{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px rgba(100,0,0, 0.6);
+    -webkit-box-shadow: 0px 3px rgba(100,0,0, 0.6);
+    -moz-box-shadow: 0px 3px rgba(100,0,0, 0.6);
+    -o-box-shadow: 0px 3px rgba(100,0,0, 0.6);
+    -ms-box-shadow: 0px 3px rgba(100,0,0, 0.6);  
+    position: relative;
+}
+.button:hover{
+    color: rgba(100,0,0, 0.8);
+    background: linear-gradient(white, pink);
+    background: -webkit-linear-gradient(white, pink);
+    background: -moz-linear-gradient(white, pink);
+    background: -o-linear-gradient(white, pink);
+    background: -ms-linear-gradient(white, pink); 
+	cursor: pointer;
+}
+
+.stamp {
+	max-height: 10%;
+	max-Width: 10%;
+}
+
+.stamp:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
